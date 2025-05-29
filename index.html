@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>INICIO | GLOW UP STUDIO</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>MAQUILLAJE ELEGANTE</h1>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">INICIO</a></li>
+        <li>
+          <a href="servicios.html">SERVICIOS</a>
+          <ul class="submenu">
+            <li><a href="servicios.html#social">SOCIAL</a></li>
+            <li><a href="servicios.html#novias">NOVIAS</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="galeria.html">GALERÍA</a>
+          <ul class="submenu">
+            <li><a href="galeria.html">LOOKS</a></li>
+            <li><a href="galeria.html">VIDEOS</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="contacto.html">CONTACTO</a>
+          <ul class="submenu">
+            <li><a href="contacto.html">UBICACIÓN</a></li>
+            <li><a href="contacto.htmls">MENSAJE</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="bienvenida">
+      <h2>BIENVENIDA A GLOW UP STUDIO</h2>
+      <p>
+        EN ESTE SITIO ENCONTRARÁS TODO LO NECESARIO PARA TRANSFORMAR TU BELLEZA CON ESTILO, PROFESIONALISMO Y CREATIVIDAD.
+        NOS DEDICAMOS A RESALTAR TU ESENCIA A TRAVÉS DE TÉCNICAS MODERNAS Y PRODUCTOS DE ALTA CALIDAD.
+        EXPLORA NUESTRAS GALERÍAS, CONOCE NUESTROS SERVICIOS Y VIVE UNA EXPERIENCIA DE BELLEZA ÚNICA.
+        CADA DETALLE HA SIDO CUIDADO PARA OFRECERTE UNA IMAGEN MEMORABLE Y CONFIABLE.
+      </p>
+    </section>
+
+    <section class="destacado">
+      <h2>¿POR QUÉ ELEGIRNOS?</h2>
+      <ul>
+        <li>✨ TRABAJAMOS CON LAS MEJORES MARCAS INTERNACIONALES DE MAQUILLAJE.</li>
+        <li>✨ AÑOS DE EXPERIENCIA EN MAQUILLAJE SOCIAL, ARTÍSTICO Y DE PASARELA.</li>
+        <li>✨ ATENCIÓN PERSONALIZADA Y ASESORÍA DE IMAGEN INCLUIDA.</li>
+        <li>✨ RESULTADOS QUE TE DEJARÁN SIN PALABRAS Y LISTA PARA TRIUNFAR.</li>
+      </ul>
+    </section>
+
+    <section class="galeria-inicio">
+      <h2>GALERÍA DESTACADA</h2>
+      <div class="imagenes">
+        <img src="makeup.jpg" alt="Look elegante">
+        <img src="mak.jpg" alt="Look natural">
+        <img src="makeupp.webp" alt="Maquillaje artístico">
+      </div>
+    </section>
+
+    <section class="video">
+      <h2>EXPERIMENTA NUESTRAS TÉCNICAS</h2>
+      <video src="Video de WhatsApp 2025-05-25 a las 00.05.48_7b5698a1.mp4" controls autoplay loop muted></video>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 MAQUILLAJE ELEGANTE - AUTOR: BRITANY ALEXANDRA BENITEZ QUEZADA 407</p>
+  </footer>
+
+  <audio autoplay loop>
+  <source src="../audio/musica-tips.mp3" type="audio/mpeg" />
+  Tu navegador no soporta audio HTML5.
+</audio>
+
+  <script src="js/main.js"></script>
+  <!-- Todo tu contenido aquí -->
+
+<!-- AGREGAS ESTE SCRIPT AL FINAL -->
+<script>
+  document.querySelectorAll('.menu > li').forEach(item => {
+    item.addEventListener('mouseenter', () => {
+      const submenu = item.querySelector('.submenu');
+      if (submenu) submenu.style.display = 'block';
+    });
+    item.addEventListener('mouseleave', () => {
+      const submenu = item.querySelector('.submenu');
+      if (submenu) submenu.style.display = 'none';
+    });
+  });
+</script>
+</body>
+</html>
